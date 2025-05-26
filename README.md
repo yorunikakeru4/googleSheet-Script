@@ -85,7 +85,12 @@ A simple web application for managing a fleet of bicycles, built with **Next.js*
     [id].tsx
   index.tsx     # Home page (bicycle list)
 /styles         # CSS Modules for styling
+   HomePage.module.css
+   BikePage.module.css
+   global.css
 /utils          # Google Sheets utility functions, date formatting, etc.
+   formateDate.ts
+   googleSheet.ts
 ```
 
 ## Customization
