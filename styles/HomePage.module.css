@@ -1,0 +1,108 @@
+.wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 20px 8px 36px;
+  background: #f6f6f6;
+  min-height: 100vh;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 14px 0 32px 0;
+  letter-spacing: 0.01em;
+  color: #232733;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px 10px;
+  justify-items: center;
+  font-family: 'Inter', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.5;
+  color: #232733;
+}
+
+.iconCard {
+  width: 88px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 2px 12px #00000010;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.13s, transform 0.13s;
+  outline: none;
+}
+
+.iconCard:active,
+.iconCard:focus {
+  box-shadow: 0 6px 30px #40e0d033;
+  transform: scale(1.04);
+}
+
+.bikeIcon {
+  margin-top: 17px;
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.status-active {
+  color: #23ba3a;
+}
+
+.status-inactive {
+  color: #bfc4ce;
+  opacity: 0.7;
+}
+
+.bikeId {
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.14rem;
+  font-weight: 800;
+  color: #232733;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 7vw 2vw 16vw;
+    max-width: 100vw;
+  }
+
+  .iconCard {
+    width: 20vw;
+    height: 22vw;
+    min-width: 62px;
+    min-height: 67px;
+  }
+
+  .bikeIcon {
+    width: 10vw;
+    height: 10vw;
+    min-width: 36px;
+    min-height: 36px;
+    margin-top: 4vw;
+  }
+
+  .bikeId {
+    font-size: 1rem;
+    bottom: 7px;
+  }
+}
